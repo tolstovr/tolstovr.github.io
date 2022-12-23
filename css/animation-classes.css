@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.fade-up {
+    transition: .5s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.fade-up.element-shown {
+    transition: .5s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dropdown-up {
+    transition: .25s;
+    transform: translateY(25px);
+    opacity: 0;
+}
+
+.dropdown-up.element-toggled {
+    transition: .25s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dropdown-down {
+    transition: .25s;
+    transform: translateY(-25px);
+    opacity: 0;
+}
+
+.dropdown-down.element-toggled {
+    transition: .25s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.scale {
+    transition: .5s;
+    transform-origin: center;
+    transform: scale(0, 0);
+}
+
+.scale.element-shown {
+    transition: .5s;
+    transform-origin: center;
+    transform: scale(1, 1);
+}
+
+.связаться .wrapper .motivation-text small.dark {
+    color: #333;
+}
