@@ -4,192 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Толстов Роберт</title>
+    <meta name="robots" content="all,noyaca" />
+    <meta name="description" content="Меня зовут Роберт, мне NaN лет, я frontend-разработчик. На этом сайте вы можете ознакомиться с моими проектами или связаться со мной!">
+    <title>Tolstov Robert | Frontend-разработчик</title>
 
-    <link rel="icon" href="images/favicon.svg">
-    <!--Bootstrap Icons--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="css-responsible.css" media="screen and (max-width: 900px)">
-    <link rel="stylesheet" href="css/animation-classes.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index-responsible.css" media="screen and (max-width: 900px)">
-    <link rel="stylesheet" href="css/dark.css">
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <nav class="navbar flex-row nowrap">
-        <a href="index.html" class="navbar-brand">
-            <span class="bi bi-code-slash"> Толстов Р<span class="hres">оберт</span><span class="lres">.</span>
-            </span>
-        </a>
-        <div class="navbar-content flex-row">
-            <div class="flex-row">
-                <div class="navbar-items scrollspy flex-row">
-                    <a href="#о_себе" class="nav-link concave-button selected">О себе</a>
-                    <a href="#проекты" class="nav-link concave-button">Проекты</a>
-                    <a href="#связаться" class="nav-link concave-button">Связаться</a>
-                </div>
-                <div class="navbar-socials flex-row">
-                    <a href="https://vk.com/robertproducts" target="_blank" class="concave-button social-link">
-                        <img class="img" src="images/vk.svg">
-                    </a>
-                    <a href="https://t.me/robertproducts" target="_blank" class="concave-button social-link">
-                        <img class="img" src="images/telegram.svg">
-                    </a>
-                    <a href="https://github.com/tolstovr" target="_blank" class="concave-button social-link">
-                        <img class="img" src="images/github.svg">
-                    </a>
-                    <span id="theme-toggler" class="concave-button social-link bi bi-sun"></span>
-                </div>
-            </div>
-            
+    <nav class="navbar">
+        <div class="items">
+            <a href="https://vk.com/robertproducts" class="navlink" target="_blank">
+                <img src="assets/images/vk.svg">
+            </a>
+            <a href="https://t.me/robertproducts" class="navlink" target="_blank">
+                <img src="assets/images/telegram.svg">
+            </a>
+            <a href="https://github.com/tolstovr" class="navlink" target="_blank">
+                <img src="assets/images/github.svg">
+            </a>
         </div>
-        <span id="navbar-toggler" class="concave-button bi bi-list lres"></span>
     </nav>
-
     <main>
-        <div class="anchor" id="о_себе"></div>
-        <section class="о_себе flex-column">
-
-            <div class="head-wrap fade-up flex-row">
-                <img src="images/avatar.webp">
-                <div class="text-caption">
-                    <span class="title">Я Роберт, Frontend и UI/UX разработчик</span>
-                    <ul id="ul-head">
-                        <li>Стек: HTML, CSS, JS, TS, JQuery, Bootstrap, Python/Tkinter</li>
-                        <li>Английский: B2 (upper-intermediate)</li>
-                        <li>Увлекаюсь техникой и готовлюсь к ЕГЭ</li>
-                        <li>Люблю вкусно покушать</li>
-                        <li>Потихоньку веду свой телеграм:
-                            <a href="https://t.me/robertproducts" target="_blank">https://t.me/robertproducts</a>
-                        </li>
-                    </ul>
-                    <a href="#связаться" class="concave-button header-link">Написать мне!</a>
+        <header>
+            <div class="fade-left">
+                <div class="rectangle"></div>
+                <img src="assets/images/avatar.jpg"> 
+            </div>
+            <div class="caption fade-right">
+                <h1>Толстов Роберт</h1>
+                <div>
+                    Сайт frontend-разработчика, который знает своё дело.
+                    А ещё немного умеет в backend. <br><span style="text-decoration: line-through;">И вышивать крестиком</span>
+                </div>
+                <div>
+                    <a href="#мои_проекты" class="link">
+                        Мои проекты
+                        <span class="icon down bi bi-arrow-down"></span>
+                    </a>
+                    <a href="#связаться" class="link">
+                        Связаться
+                        <span class="icon down bi bi-arrow-down"></span>
+                    </a>
                 </div>
             </div>
-            
-            <div class="cards">
-                <figure class="card scale">
-                    <img src="images/coolboy-1.webp">
-                    <figcaption>
-                        Это сфоткал профессионал своего дела
-                        <a style="text-decoration: underline !important;" href="https://t.me/+zrHm2dkERco0Y2Iy" target="_blank">Саша</a>
-                    </figcaption>
-                </figure>
+        </header>
+        <hr>
 
-                <figure class="card scale">
-                    <img src="images/coolboy-2.webp">
-                    <figcaption>
-                        Пытаюсь разобрать свой вчерашний код
-                    </figcaption>
-                </figure>
-                
-                <figure class="card scale">
-                    <img src="images/coolboy-3.webp">
-                    <figcaption>
-                        Это я малышарик! :)
-                    </figcaption>
-                </figure>
-
-                <figure class="card scale">
-                    <img src="images/coolboy-4.webp">
-                    <figcaption>
-                        Это я на "Zаряд Хакатон". Терпеть не могу аниме :(
-                    </figcaption>
-                </figure>
-
-                <figure class="card scale">
-                    <img src="images/coolboy-5.webp">
-                    <figcaption>
-                        Кушаю курочку из KFC. А сейчас я уже дома
-                    </figcaption>
-                </figure>
-
-                <figure class="card scale">
-                    <img src="images/coolboy-6.webp">
-                    <figcaption>
-                        Это лучшая команда айтишников в мире: фронтендер, олимпиадник и гейм-дизайнер
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <div class="anchor" id="проекты"></div>
-        <section class="проекты">
-            <h1>Мои проекты</h1>
-            <div class="flex-column">
-                <figure class="project scale">
-                    <img src="images/project-1.webp">
-                    <figcaption>
-                        <ul>
-                            <li>Портфолио художника</li>
-                            <li>Разработка статического одностраничного лендинга-портфолио для художника с возможностью бессерверной обратной связи (внешние ссылки на социальные сети)</li>
-                            <li>Bootstrap 5</li>
-                            <li><a href="index.html" style="text-decoration: underline !important;" target="_blank">Толстов Роберт</a></li>
-                            <li><a href="https://katiatol26.netlify.app/" style="text-decoration: underline !important;" target="_blank">https://katiatol26.netlify.app</a></li>
-                        </ul>
-                    </figcaption>
-                </figure>
-
-                <figure class="project scale">
-                    <img src="images/project-2.webp">
-                    <figcaption>
-                        <ul>
-                            <li>MathBasics 2.0 (alpha)</li>
-                            <li>MathBasics возвращается - новый интерфейс, новые игровые режимы, новая система достижений и куча всего. Скоро будет доступно для скачивания!</li>
-                            <li>Python, Tkinter, PyGame</li>
-                            <li><a href="index.html" style="text-decoration: underline !important;" target="_blank">Толстов Роберт</a></li>
-                            <li>Пока в разработке</li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-            
-        </section>
-
-        <div class="anchor" id="связаться"></div>
-        <section class="связаться flex-row">
-            <div class="flex-row wrapper">
-                <div class="flex-column motivation-text">
-                    <h1>Связаться со мной</h1>
-                    <span>Нужен современный frontend?</span>
-                    <span>Статический сайт под ключ?</span>
-                    <span>Умеете готовить и нужен дегустатор?</span>
-                    <span>Заполните простую форму, и я свяжусь с вами!</span>
-                    <small>* За форму спасибо сервису formspree :)</small>
+        <div id="мои_проекты" class="anchor"></div>
+        <section class="projects">
+            <h1 class="fade-up">Мои проекты</h1>
+            <div class="project fade-right">
+                <div>
+                    <div class="rectangle"></div>
+                    <img src="assets/images/project1.png">
                 </div>
-                <form action="https://formspree.io/f/xyyvkory" method="post" class="flex-column feedback-form scale">
-                    <div class="flex-row">
-                        <input class="text-input" name="Имя" type="text" autocomplete="given-name" required placeholder="Имя">
-                        <input class="text-input" name="Фамилия" type="text" autocomplete="family-name" required placeholder="Фамилия">
+                <div class="caption">
+                    <h2>Сайт-порфолио художника</h2>
+                    <p>
+                        Статический одностраничный лендинг с элементами портфолио.
+                        Основной фронтенд выполнен на Bootstrap. На сайте реализована переадресация
+                        пользователей в социальные сети автора
+                    </p>
+                    <a href="https://katiatol26.netlify.app" target="_blank" class="link">
+                        Ссылка на проект
+                        <span class="icon right bi bi-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="project fade-right">
+                <div>
+                    <div class="rectangle"></div>
+                    <img src="assets/images/project2.png">
+                </div>
+                <div class="caption">
+                    <h2>Промо-игра (кейс от ПАО "Ростелеком")</h2>
+                    <p>
+                        Веб-игра, включая в геймплеё интеграцию продуктов "Умный дом" от Ростелеком.
+                        Кейс был выдан нашей команде на "Zаряд Хакатон 2023". Моя роль в проекте - разработка
+                        адаптивного интерфейса, подключение и работа с базой игроков и обращение к Unity-игре
+                    </p>
+                    <a href="https://github.com/tolstovr/new_hackaton_march_2023" target="_blank" class="link">
+                        Ссылка на проект
+                        <span class="icon right bi bi-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="project fade-right">
+                <div>
+                    <div class="rectangle"></div>
+                    <img src="assets/images/project3.webp">
+                </div>
+                <div class="caption">
+                    <h2>MathBasics</h2>
+                    <p>
+                        Мой пет-проект. Математическая викторина с различными режимами игры.
+                        Интерфейс реализован на Python/Tkinter. В игре есть система достижений.
+                        Короче, лучше один раз поиграть, чем сто раз прочитать описание. Это я так намекаю ;)
+                    </p>
+                    <a class="link">
+                        Ссылка недоступна
+                        <span class="icon shake bi bi-slash-circle"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <div id="связаться" class="anchor"></div>
+        <section class="contact">
+            <div class="caption">
+                <h1>Нужен мощный и уникальный фронтенд?<br>Оставьте заявку, и я с вами свяжусь!</h1>
+            </div>
+            <div>
+                <div class="rectangle"></div>
+                <form action="https://formspree.io/f/xyyvkory" method="post">
+                    <input type="text" name="Имя" class="text" placeholder="Имя" required>
+                    <input type="tel" name="Телефон" class="text mask-phone" placeholder="Телефон">
+                    <input type="email" name="E-mail" class="text mask-email" placeholder="E-mail" autocomplete="email" required>
+                    <textarea type="text" name="Комментарий" class="text" placeholder="Комментарий (до 1000 символов)" required maxlength="1000"></textarea>
+                    <div>
+                        <div class="link">
+                            <input type="submit" value="Отправить">
+                            <span class="icon right bi bi-send"></span>
+                        </div>
+                        <div class="link">
+                            <input type="reset" value="Сбросить">
+                            <span class="icon right bi bi-eraser"></span>
+                        </div>
                     </div>
-                    <input class="text-input" name="Почта для ответа" type="email" autocomplete="email" required placeholder="E-mail для обратной связи">
-                    <div class="flex-row">
-                        <input class="text-input" name="ВК" type="text" autocomplete="nickname" placeholder="ВК">
-                        <input class="text-input" name="Телеграм" type="text" autocomplete="nickname" placeholder="Телеграм">
-                    </div>
-                    <textarea class="text-input" name="Обращение" placeholder="Текст обращения (до 5000 символов)" maxlength="5000"></textarea>
-                    <div class="flex-row">
-                        <input class="concave-button" type="submit" value="Готово!">
-                        <input class="concave-button" type="reset" value="Сбросить">
-                    </div>
-                    <input type="hidden" name="_next" value="submit.html">
                 </form>
             </div>
+            
         </section>
+        <hr>
     </main>
-
-    <footer class="flex-row wrap footer">
-        <div class="flex-column">
-            <h2>Это всё! Было приятно познакомиться!</h2>
-            <div class="footer-text">
-                <strong>Роберт Толстов 2022. Все права защищены.</strong>
-                <p>E-mail для связи: <a href="mailto:robtolstov@gmail.com">robtolstov@gmail.com</a></p>
-                <p>Сделано с <span class="bi bi-heart-fill"></span> и <span class="bi bi-bootstrap-fill"> Bootstrap Icons</span></p>
-            </div>
-        </div>
+    <footer>
+        <h4>Роберт Толстов <span id="year"></span>. <a href="#" class="link">Наверх <span class="icon up bi bi-arrow-up"></span></a></h4>
     </footer>
-
-    <!--JQuery--><script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
 </body>
 </html>

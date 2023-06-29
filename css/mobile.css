@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+hr {
+    width: 75%;
+    height: 0;
+    border: none;
+    border-top: .25rem dashed currentColor;
+    position: relative;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 25%;
+    left: 0;
+    width: 35px;
+    height: auto;
+    padding: 1px 0;
+    padding-right: 1px;
+    background-color: #050505aa;
+}
+
+.navbar .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.navbar .items .navlink,
+.navbar .items .navlink img {
+    transition: .125s;
+    height: 33px;
+    width: 33px;
+    margin: 1px 0;
+    border-radius: 50%;
+}
+
+/* header */
+header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    height: unset;
+}
+
+header .rectangle {
+    border: .25rem solid currentColor;
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    transform: translate(-10px, -10px);
+}
+
+header img {
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+    transform: translate(10px, 10px);
+}
+
+header .caption {
+    font-size: large;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+header .caption > * {
+    margin: 1rem 0;
+}
+
+/* projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: large;
+
+    background-color: transparent;
+    padding: 10px;
+    margin: 25px 0;
+}
+
+.projects .project .caption {
+    width: 100%;
+    font-size: medium;
+}
+
+.projects .project > div {
+    width: 100%;
+    margin-right: 1.5rem;
+}
+
+.projects .project > div img {
+    width: 296px;
+    height: 192px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+    transform: translate(10px, 10px);
+}
+
+.projects .project > div .rectangle {
+    border: .25rem solid currentColor;
+    width: 296px;
+    height: 192px;
+    position: absolute;
+    transform: translate(-10px, -10px);
+}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.contact .caption h1 {
+    width: 100%;
+    font-size: x-large;
+    text-align: left;
+}
+
+.contact > div .rectangle {
+    border: .25rem solid currentColor;
+    width: 80vw;
+    position: absolute;
+    transform: translate(-1px, -1px);
+}
+
+form {
+    transform: translate(1px, 1px);
+}
+
+form .text {
+    background-color: #0f0f0f;
+    border: 2px currentColor solid;
+    color: #f7f7f7;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: larger;
+    padding: .5rem;
+    outline: none;
+}
+
+form > * {
+    display: block;
+    width: 80vw;
+    margin: 15px;
+}
+
+form > textarea {
+    resize: none;
+    height: 7.5rem
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form > div > div:first-child {
+    color: #0e8e39;
+    margin-top: 0;
+}
+
+form > div > div:not(:first-child) {
+    color: #9d0000;
+    margin-top: 0;
+}
+
+form > div > div input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: #0e8e39;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    font-size: larger;
+    padding: 0;
+    text-decoration: underline dotted currentColor;
+}
+
+form > div > div input[type="reset"] {
+    background-color: transparent;
+    border: none;
+    color: #9d0000;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    font-size: large;
+    padding: 0;
+    text-decoration: underline dotted currentColor;
+} 

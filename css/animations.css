@@ -1,0 +1,39 @@
+.fade-left {
+    transition: .25s;
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.fade-up {
+    transition: .25s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.fade-right {
+    transition: .25s;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.fade-left.shown,
+.fade-right.shown,
+.fade-up.shown {
+    transform: none;
+    opacity: 1;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(.25rem, 0);
+    }
+    33% {
+        transform: translate(0, 0);
+    }
+    66% {
+        transform: translate(.5rem, 0);
+    }
+    100% {
+        transform: translate(.25rem, 0);
+    }
+}
